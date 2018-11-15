@@ -1,7 +1,9 @@
 services:
     symfony_slate.toc_data:
         class: Soltys\Bundle\SoltysSlateBundle\Twig\TocDataExtension
-        tags: [twig.extension]
+        tags:
+            - { name: twig.extension }
     symfony_slate.markdown:
         class: Soltys\Bundle\SoltysSlateBundle\Twig\MarkdownExtension
-        tags: [twig.extension]
+        tags:
+            - { name: twig.extension }
